@@ -111,7 +111,7 @@ if (ANDROID)
             ${GAME_SRC_DIR}/savegame/tables/levelfields.h
     )
     add_library(yquake2 SHARED ${Game-Source} ${Game-Header})
-    target_link_libraries(game ${yquake2LinkerFlags})
+    target_link_libraries(yquake2 ${yquake2LinkerFlags})
 
 else ()
     if(YQUAKE2LIBS)
